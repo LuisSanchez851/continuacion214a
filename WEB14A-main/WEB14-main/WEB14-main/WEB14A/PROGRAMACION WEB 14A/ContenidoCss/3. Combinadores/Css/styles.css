@@ -1,0 +1,74 @@
+/*Gama de colores*/
+#011526#023859#699EBF#025373#A3C9D9
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #A3C9D9;
+
+}
+/*1. por etiqueta*/
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+
+    background-color: #025373;
+}
+/*2. Por clases*/
+.subtitulo{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 900;
+    color: #011526;
+
+}
+/*3. Por id*/
+#info{
+    border-radius: 4px;
+    padding: 4px;
+    color: aliceblue;
+    background-color: #025373;
+    font-size: 24px;
+}
+/*Selectores por atributo*/
+[class]{
+    background-color: white ;
+    
+}
+a[href]{
+    text-align: left;
+    margin-left :8% ;
+    color: aliceblue;
+    font-size: 26px;
+
+}
+/*Utilizando sufijo*/
+a[href$=".com"]{
+    font-size: 34px;
+    color: cadetblue;
+}
+/*Utilizando prefijos*/
+article[id*="art"]{
+    margin-top: 20px;
+    width: 30%;
+
+}
+/*Elemetos hermanos*/
+.subtitulo + article {
+    padding: 30px;
+    
+}
+/*EDesendencia*/
+.main .subtitulo{
+    background-color: yellow;
+}
+/*Selecion multiple*/
+.parrafo.aside {
+    display: inline-block;
+    font-size: 10px;
+}
+article > p{
+    font-size: 30px;
+}

@@ -1,0 +1,61 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Selectores principales:
+    1. Por etiqueta <h1> <main>
+*/
+h1{
+
+    background-color: chartreuse;
+    text-align: center;
+    padding: 2%;
+    color: azure;
+}
+/*
+2. Por id
+*/
+main{
+    width: 100%;
+    padding-bottom: 3%;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+
+}
+#seccion1{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 18px;
+    background-color: crimson;
+    color: white;
+}
+/*
+3. Seleccion por class
+*/
+.seccion2{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background-color: blue;
+    margin-bottom: 2%;
+    padding: 5%;
+}
+/*
+4. Seleccion por agrupacion
+*/
+.div1, .div2, .div3{
+    display: inline-block;
+    width: 33%;
+    background-color:palevioletred;
+    border: 2px solid black;
+    padding: 2%;
+}

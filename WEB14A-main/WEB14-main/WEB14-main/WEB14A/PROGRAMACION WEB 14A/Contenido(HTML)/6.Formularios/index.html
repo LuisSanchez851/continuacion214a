@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    <section>
+        <!--
+            etiqueta para crear formularios
+        -->
+
+        <form action="" method="get" id="form">
+        <!--Get Post-->
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" 
+            value="Juan"
+            placeholder="Juan"
+            minlength="3"
+            maxlength="25"
+            required
+            title="Se admiten solo letras, minimos 3 y maximo 25"
+            autofocus
+            spellcheck="true"
+            autocomplete="off"
+            tabindex="1"
+            >
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad"
+            min="18" max="90" required tabindex="2"
+            >
+            <label for="password">contraseña:</label>
+            <input type="password" name="pass" id="pass" required>
+            <hr>
+            <label for="fecha">fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+            <label for="color">Selecciona un color:</label>
+            <input type="color" name="color" id="color">
+            <!-- Enlazado con datalist-->
+            <datalist id="meses" >
+                
+                <option value="enero"></option>
+                <option value="octubre"></option>
+                <option value="diciembre"></option>
+           
+            </datalist>
+            <label for="mes">meses:</label>
+            <input type="month" name="mes" id="mes" list="meses">
+            <!--agrupar-->
+            <fieldset>
+                <legend>Estado civil:</legend>
+                <input type="radio" name="estado" id="estado" value="soltero"> Soltero(a)
+                <input type="radio" name="estado" id="estado" value="Casado"> Casado(a)
+                <input type="radio" name="estado" id="estado" value="viudo(a)"> Viudo(a)
+                
+            </fieldset>
+            <label for="condicones"> Acepta el contrato</label>
+            <input type="checkbox" name="contrato" id="contrato">
+            <br>
+            <hr>
+            <label for="lenguajes">Lenguajes de programacion</label>
+            <select name="lenguajes" id="lenguajes">
+                <optgroup label="Backend">
+                    <option value="java"> Java</option>
+                    <option value="php">Php</option>
+                    <option value="python"> Python</option>
+                </optgroup>
+                <optgroup label="Frontend">
+                    <option value="js"> Java Script</option>
+                    <option value="ps"> PyScript</option>
+                </optgroup>
+            </select>
+            <br>
+            </select>
+            <input type="button" value="Enviar">
+            <input type="submit" value="enviando">
+            <button type="button"> Guardar</button>
+            <button type="reset">Borrar</button>
+
+
+        </form>
+
+    </section>
+
+
+</body>
+</html>
