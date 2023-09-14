@@ -1,0 +1,17 @@
+*{
+   padding: 0; 
+    margin: 0;
+
+}
+#parrafo1{
+    background-color: chartreuse;
+}
+.parrafo_principal{
+    background-color: deeppink;
+
+}
+body {
+margin: 20px;
+padding: 10px, 4px;
+
+}
